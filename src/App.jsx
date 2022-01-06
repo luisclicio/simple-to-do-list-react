@@ -1,3 +1,11 @@
+import { TasksProvider } from './contexts/TasksContext';
+
+import { Tasks } from './pages/Tasks';
+
 export function App() {
-  return <h1>Minha Tarefas</h1>;
+  return (
+    <TasksProvider>
+      <Tasks />
+    </TasksProvider>
+  );
 }
